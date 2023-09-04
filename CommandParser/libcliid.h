@@ -5,14 +5,7 @@
  *
  *    Description:  
  *
- *        Version:  1.0
- *        Created:  Saturday 05 August 2017 11:33:29  IST
- *       Revision:  1.0
- *       Compiler:  gcc
- *
- *         Author:  Er. Abhishek Sagar, Networking Developer (AS), sachinites@gmail.com
- *        Company:  Brocade Communications(Jul 2012- Mar 2016), Current : Juniper Networks(Apr 2017 - Present)
- *
+ 
  * =====================================================================================
  */
 

@@ -5,27 +5,6 @@
  *
  *    Description:  This file contains the routines to implement the communication between nodes
  *
- *        Version:  1.0
- *        Created:  Thursday 19 September 2019 10:31:35  IST
- *       Revision:  1.0
- *       Compiler:  gcc
- *
- *         Author:  Er. Abhishek Sagar, Networking Developer (AS), sachinites@gmail.com
- *        Company:  Brocade Communications(Jul 2012- Mar 2016), Current : Juniper Networks(Apr 2017 - Present)
- *        
- *        This file is part of the NetworkGraph distribution (https://github.com/sachinites).
- *        Copyright (c) 2017 Abhishek Sagar.
- *        This program is free software: you can redistribute it and/or modify
- *        it under the terms of the GNU General Public License as published by  
- *        the Free Software Foundation, version 3.
- *
- *        This program is distributed in the hope that it will be useful, but 
- *        WITHOUT ANY WARRANTY; without even the implied warranty of 
- *        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
- *        General Public License for more details.
- *
- *        You should have received a copy of the GNU General Public License 
- *        along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  * =====================================================================================
  */
@@ -47,7 +26,7 @@ static int
 _send_pkt_out(int sock_fd, char *pkt_data, unsigned int pkt_size, 
                 unsigned int dst_udp_port_no){
 
-    int rc;
+    int rc; //
     struct sockaddr_in dest_addr;
    
     struct hostent *host = (struct hostent *) gethostbyname("127.0.0.1"); 
@@ -289,6 +268,8 @@ pkt_receive(node_t *node, interface_t *interface,
     pkt = pkt_buffer_shift_right(pkt, pkt_size, 
             MAX_PACKET_BUFFER_SIZE - IF_NAME_SIZE);
 
+    /*Entry point into data link layer from physical layer
+    * Ingress journey of a packet starts from here in TCP/IP stack*/
     /*Do further processing of the pkt here*/
     layer2_frame_recv(node, interface, pkt, pkt_size );
     return 0;

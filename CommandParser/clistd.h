@@ -5,13 +5,6 @@
  *
  *    Description:  All Validation functions for leaves and standard default callbacks are defined in this file
  *
- *        Version:  1.0
- *        Created:  Sunday 06 August 2017 06:00:22  IST
- *       Revision:  1.0
- *       Compiler:  gcc
- *
- *         Author:  Er. Abhishek Sagar, Networking Developer (AS), sachinites@gmail.com
- *        Company:  Brocade Communications(Jul 2012- Mar 2016), Current : Juniper Networks(Apr 2017 - Present)
  *
  * =====================================================================================
  */

@@ -5,33 +5,8 @@
  *
  *    Description:  This file contains the definition of all structures required to create a NetworkGraph
  *
- *        Version:  1.0
- *        Created:  Wednesday 18 September 2019 02:17:17  IST
- *       Revision:  1.0
- *       Compiler:  gcc
- *
- *         Author:  Er. Abhishek Sagar, Networking Developer (AS), sachinites@gmail.com
- *        Company:  Brocade Communications(Jul 2012- Mar 2016), Current : Juniper Networks(Apr 2017 - Present)
- *        
- *        This file is part of the NetworkGraph distribution (https://github.com/sachinites).
- *        Copyright (c) 2017 Abhishek Sagar.
- *        This program is free software: you can redistribute it and/or modify
- *        it under the terms of the GNU General Public License as published by  
- *        the Free Software Foundation, version 3.
- *
- *        This program is distributed in the hope that it will be useful, but 
- *        WITHOUT ANY WARRANTY; without even the implied warranty of 
- *        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
- *        General Public License for more details.
- *
- *        You should have received a copy of the GNU General Public License 
- *        along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  * =====================================================================================
- */
-
-/* Visit my Website for more wonderful assignments and projects :
- * www.csepracticals.com
  */
 
 #ifndef __GRAPH__
@@ -72,8 +47,8 @@ struct node_ {
     char node_name[NODE_NAME_SIZE];
     interface_t *intf[MAX_INTF_PER_NODE];
     glthread_t graph_glue;
-    unsigned int udp_port_number;
-    int udp_sock_fd;
+    unsigned int udp_port_number; // port number on which this node is listening
+    int udp_sock_fd; // udp socket descriptor
     node_nw_prop_t node_nw_prop;
 };
 GLTHREAD_TO_STRUCT(graph_glue_to_node, node_t, graph_glue);

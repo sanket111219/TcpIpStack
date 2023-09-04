@@ -4,26 +4,6 @@
  *       Filename:  pkt_dump.c
  *
  *    Description:  This file implements the routine to dump packet content field by field
- *
- *        Version:  1.0
- *        Created:  11/03/2019 01:51:00 AM
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Er. Abhishek Sagar, Juniper Networks (www.csepracticals.com), sachinites@gmail.com
- *        Company:  Juniper Networks
- *
- *        This file is part of the NetworkGraph distribution (https://github.com/sachinites) 
- *        Copyright (c) 2019 Abhishek Sagar.
- *        This program is free software: you can redistribute it and/or modify it under the terms of the GNU General 
- *        Public License as published by the Free Software Foundation, version 3.
- *        
- *        This program is distributed in the hope that it will be useful, but
- *        WITHOUT ANY WARRANTY; without even the implied warranty of
- *        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- *        General Public License for more details.
- *
- *        visit website : www.csepracticals.com for more courses and projects
  *                                  
  * =====================================================================================
  */
